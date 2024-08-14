@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo">KHANA DOT COM</h1>
+        <div class="nav-icons">
+          <i class="fas fa-sign-out-alt"></i>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside>
+        <div class="profile-summary">
+          <img src="user-avatar.png" alt="Profile Picture" />
+          <h2>RAHUL PRAJAPATI</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" id="profile-btn">My Profile</a></li>
+            <li><a href="#" id="orders-btn">My Orders</a></li>
+            <li><a href="#" id="address-btn">Shipping Address</a></li>
+            <li><a href="#" id="account-btn">Change Account</a></li>
+            <li><a href="#" id="password-btn">Change Password</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main>
+        <section class="personal-info" id="profile-section">
+          <h2>Personal Information</h2>
+          <button class="edit-btn">Change Information</button>
+          <form action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" value="Rahul Prajapati" disabled />
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" value="2001-11-04" disabled />
+
+            <label for="gender">Gender</label>
+            <div class="gender">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                checked
+                disabled />
+              <label for="male">Male</label>
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+                disabled />
+              <label for="female">Female</label>
+            </div>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" value="9369585761" disabled />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" value="XYZ@gmail.com" disabled />
+          </form>
+        </section>
+
+        <section class="orders-info" id="orders-section" style="display: none">
+          <h2>My Orders</h2>
+          <p>Order history will be displayed here.</p>
+        </section>
+
+        <section
+          class="address-info"
+          id="address-section"
+          style="display: none">
+          <h2>Shipping Address</h2>
+          <p>Shipping address details will be displayed here.</p>
+        </section>
+
+        <section
+          class="account-info"
+          id="account-section"
+          style="display: none">
+          <h2>Change Account Details</h2>
+          <form action="#">
+            <label for="email-change">Email</label>
+            <input
+              type="email"
+              id="email-change"
+              value="maazforlap@gmail.com" />
+
+            <label for="username-change">Username</label>
+            <input type="text" id="username-change" value="Maaz Shakeel" />
+          </form>
+        </section>
+
+        <section
+          class="password-info"
+          id="password-section"
+          style="display: none">
+          <h2>Change Password</h2>
+          <form action="#">
+            <label for="current-password">Current Password</label>
+            <input type="password" id="current-password" />
+
+            <label for="new-password">New Password</label>
+            <input type="password" id="new-password" />
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" />
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
