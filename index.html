@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8a33eecc9b.js"
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <nav>
         <h1 class="logo">KHANA DOT COM</h1>
-        <div class="nav-icons">
-          <i class="fas fa-sign-out-alt"></i>
-          <i class="fas fa-shopping-cart"></i>
-          <i class="fas fa-bars"></i>
-        </div>
       </nav>
     </header>
 
@@ -30,17 +28,51 @@
 
         <nav>
           <ul>
-            <li><a href="#" id="profile-btn">My Profile</a></li>
-            <hr />
-            <li><a href="#" id="orders-btn">My Orders</a></li>
-            <hr />
-            <li><a href="#" id="address-btn">Shipping Address</a></li>
-            <hr />
-            <li><a href="#" id="account-btn">Change Account</a></li>
-            <hr />
-            <li><a href="#" id="password-btn">Change Password</a></li>
-            <hr />
-            <li><a href="#" id="delete-btn">Delete Account</a></li>
+            <li>
+              <a href="#" id="profile-btn">
+                <i
+                  style="margin-right: 5px"
+                  class="fa-regular fa-address-card"></i
+                >My Profile</a
+              >
+            </li>
+
+            <li>
+              <a href="#" id="orders-btn"
+                ><i style="margin-right: 5px" class="fa-solid fa-truck"></i> My
+                Orders</a
+              >
+            </li>
+
+            <li>
+              <a href="#" id="address-btn"
+                ><i
+                  style="margin-right: 5px"
+                  class="fa-solid fa-location-dot"></i
+                >Shipping Address</a
+              >
+            </li>
+
+            <li>
+              <a href="#" id="account-btn"
+                ><i style="margin-right: 5px" class="fa-regular fa-user"></i
+                >Change Account</a
+              >
+            </li>
+
+            <li>
+              <a href="#" id="password-btn"
+                ><i style="margin-right: 5px" class="fa-solid fa-lock"></i
+                >Change Password</a
+              >
+            </li>
+
+            <li>
+              <a href="#" id="delete-btn"
+                ><i style="margin-right: 5px" class="fa-solid fa-trash"></i
+                >Delete Account</a
+              >
+            </li>
           </ul>
         </nav>
       </aside>
@@ -56,7 +88,7 @@
             </div>
           </div>
 
-          <hr />
+          <hr style="border: 2px solid gray" />
 
           <form action="#" class="form">
             <label for="name">Name</label>

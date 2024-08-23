@@ -41,7 +41,7 @@ header {
 }
 
 aside {
-  width: 250px;
+  width: 220px;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -66,11 +66,8 @@ aside {
 
 aside nav ul {
   list-style: none;
-  padding: 0;
-  margin: 20px 0 0 0;
-}
-
-aside nav ul li {
+  padding: 1px;
+  border: 1px solid gray;
 }
 
 aside nav ul li a {
@@ -84,7 +81,7 @@ aside nav ul li a {
 }
 
 aside nav ul li a:hover {
-  background-color: #ff5722;
+  background-color: #666565;
   color: #fff;
 }
 
@@ -106,7 +103,7 @@ main {
 .edit-btn {
   background-color: #ff5722;
   color: #fff;
-  padding: 5px;
+  padding: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
